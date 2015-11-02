@@ -1,0 +1,8 @@
+node_modules
+.tmp
+dump.rdb
+*.log
+.env
+tmp/
+lib/
+build/

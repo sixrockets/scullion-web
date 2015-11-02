@@ -1,0 +1,104 @@
+.template {
+  display: none !important;
+}
+body, input {
+  font-family: dejavu sans mono, Menlo, Monaco, Consolas, Lucida Console, tahoma, arial;
+  font-size: 13px;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #efefef;
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+}
+.header button {
+  font-size: 19px;
+  width: 30px;
+  margin: 2px 2px 0 2px;
+  padding: 0;
+  float: left;
+}
+.header .url-holder {
+  position: absolute;
+  left: 38px;
+  top: 4px;
+  right: 14px;
+  bottom: 9px;
+}
+.header .url {
+  border: 1px solid #999;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.messages {
+  overflow-y: scroll;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 36px;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+}
+.message {
+  border-bottom: 1px solid #bbb;
+  padding: 2px;
+}
+.message-type {
+  font-weight: bold;
+  position: absolute;
+  width: 80px;
+  display: block;
+}
+.message-data {
+  margin-left: 90px;
+  display: block;
+  word-wrap: break-word;
+  white-space: pre;
+}
+.type-input,
+.type-send {
+  background-color: #ffe;
+}
+.type-onmessage {
+  background-color: #eef;
+}
+.type-open,
+.type-onopen {
+  background-color: #efe;
+}
+.type-close,
+.type-onclose {
+  background-color: #fee;
+}
+.type-onerror,
+.type-exception {
+  background-color: #333;
+  color: #f99;
+}
+.type-send .message-type,
+.type-onmessage .message-type {
+  opacity: 0.2;
+}
+.type-input .message-type {
+  color: #090;
+}
+.send-input {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  background-color: inherit;
+}
+.send-input:focus {
+  outline: none;
+}
