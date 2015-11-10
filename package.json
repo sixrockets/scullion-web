@@ -2,25 +2,39 @@
   "name": "scullion-web",
   "version": "0.0.1",
   "description": "Web adapter for scullion",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "./lib"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sixrockets/scullion-web.git"
+    "url": "https://github.com/sixrockets/scullion-web"
   },
   "keywords": [
     "scullion",
     "web"
   ],
-  "author": "Manuel Alb",
+  "author": {
+    "name": "Manuel Albarran",
+    "email": "me@manuelalb.com",
+    "url": "https://github.com/weapp"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sixrockets/scullion-web/issues"
   },
+  "scripts": {
+    "watch": "gulp watch",
+    "prepublish": "gulp prepublish",
+    "test": "gulp test",
+    "test-node": "gulp test-node",
+    "test-browser": "gulp test-browser"
+  },
   "homepage": "https://github.com/sixrockets/scullion-web",
   "dependencies": {
+    "es6-lib": "^0.0.10",
+    "babel-polyfill": "git://github.com/grammarly/babel-polyfill.git#1.0.1",
+    "chai": "^2.2.0",
     "nodejs-websocket": "^1.4.0"
   }
 }

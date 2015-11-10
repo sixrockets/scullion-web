@@ -6,3 +6,5 @@ dump.rdb
 tmp/
 lib/
 build/
+bower_components
+dist
